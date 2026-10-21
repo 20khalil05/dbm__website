@@ -1,0 +1,21 @@
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+.next/
+node_modules/
+
+# Java / Maven
+backend/target/
+target/
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
