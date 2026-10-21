@@ -10,6 +10,10 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV RESEND_API_KEY="re_build_dummy_key"
+ENV NEXT_PUBLIC_SUPABASE_URL="https://dummy.supabase.co"
+ENV NEXT_PUBLIC_SUPABASE_ANON_KEY="dummy-key"
+ENV SUPABASE_SERVICE_ROLE_KEY="dummy-key"
 RUN npm run build
 
 # ── Stage 3: Runner ─────────────────────────────────

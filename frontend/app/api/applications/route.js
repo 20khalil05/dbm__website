@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 import { getSupabaseServerClient } from "@/lib/supabaseServer";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.RESEND_API_KEY || "re_dummy_for_build");
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5 Mo
 
